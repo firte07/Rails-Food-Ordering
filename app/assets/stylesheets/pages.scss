@@ -1,0 +1,202 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#banner {
+  background-image: url("https://images.unsplash.com/photo-1579027989536-b7b1f875659b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  aspect-ratio: 16/9;
+}
+
+.container {
+  display: grid;
+  height: 1200px;
+  grid-template-columns: repeat(4, 430px);
+  grid-template-rows: repeat(2, 430px);
+  grid-gap: 50px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+}
+
+.cover h1 {
+  color: white;
+  font-family: "Dancing Script";
+  font-size: 80px;
+  position: relative;
+  top: 150px;
+  text-align: center;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: transparent;
+}
+
+.hyperlink {
+  color: white;
+  font-family: "Dancing Script";
+  display: block;
+  margin-top: 800px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.selects {
+  display: flex;
+  padding-left: 75px;
+  padding-right: 75px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.category-select {
+  font-size: 35px;
+  background-color: white;
+  color: peru;
+  font-family: "Dancing Script";
+  border: none;
+}
+
+.price {
+  font-size: 35px;
+  background-color: white;
+  color: peru;
+  font-family: "Dancing Script";
+  border: none;
+
+  label {
+    padding-right: 20px;
+  }
+}
+
+.welcome {
+  font-family: "Dancing Script";
+  font-size: 60px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: peru;
+  padding-bottom: 10px;
+}
+
+.image-title {
+  font-family: "Dancing Script";
+  font-size: 40px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: peru;
+  padding: 10px 10px 0px 10px;
+}
+
+.food-price {
+  font-family: "Dancing Script";
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: rgb(31, 22, 13);
+}
+
+.description {
+  font-family: "Dancing Script";
+  font-size: 20px;
+  text-align: center;
+  color: rgb(173, 116, 9);
+}
+
+.image {
+  display: grid;
+  width: 100%;
+  height: auto;
+}
+
+.image-food {
+  z-index: 5;
+  transition: transform 2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.product {
+  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  width: 430px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.aboutus {
+  padding-left: 125px;
+}
+
+#about p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  padding-left: 125px;
+  padding-right: 100px;
+}
+
+.ingredients {
+  font-family: "Dancing Script";
+  font-size: 40px;
+  text-align: left;
+  color: peru;
+  padding: 50px 0px 10px 125px;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(3, 600px);
+  height: 250px;
+  background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+  justify-items: center;
+  justify-content: center;
+  min-width: 750px;
+  padding-right: 150px;
+
+  p {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+footer {
+  &.info, &.program, &.contact {
+    text-align: left;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type='range'] {
+    overflow: hidden;
+    width: 140px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: #d8d5c6;
+    border-radius: 30%;
+
+    &::-webkit-slider-runnable-track {
+      height: 20px;
+      -webkit-appearance: none;
+      color: white;
+    }
+
+    &::-webkit-slider-thumb {
+      width: 10px;
+      height: fit-content;
+      -webkit-appearance: none;
+      height: 20px;
+      cursor: ew-resize;
+      background: peru;
+    }
+  }
+}

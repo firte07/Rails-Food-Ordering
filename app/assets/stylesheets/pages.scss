@@ -1,6 +1,10 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 #banner {
@@ -26,7 +30,7 @@
 
 .cover h1 {
   color: white;
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", serif;
   font-size: 80px;
   position: relative;
   top: 150px;
@@ -42,7 +46,7 @@
 
 .hyperlink {
   color: white;
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", serif;
   display: block;
   margin-top: 800px;
   margin-left: 50px;
@@ -63,7 +67,7 @@
   font-size: 35px;
   background-color: white;
   color: peru;
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", serif;
   border: none;
 }
 
@@ -71,7 +75,7 @@
   font-size: 35px;
   background-color: white;
   color: peru;
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", serif;
   border: none;
 
   label {
@@ -80,7 +84,7 @@
 }
 
 .welcome {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", serif;
   font-size: 60px;
   letter-spacing: 0.3px;
   text-align: left;
@@ -89,16 +93,16 @@
 }
 
 .image-title {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", serif;
   font-size: 40px;
   letter-spacing: 0.3px;
   text-align: center;
   color: peru;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .food-price {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", serif;
   font-size: 30px;
   letter-spacing: 0.3px;
   text-align: center;
@@ -106,7 +110,7 @@
 }
 
 .description {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", serif;
   font-size: 20px;
   text-align: center;
   color: rgb(173, 116, 9);
@@ -128,7 +132,7 @@
 }
 
 .product {
-  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
   width: 430px;
   height: fit-content;
   cursor: pointer;
@@ -146,11 +150,11 @@
 }
 
 .ingredients {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", serif;
   font-size: 40px;
   text-align: left;
   color: peru;
-  padding: 50px 0px 10px 125px;
+  padding: 50px 0 10px 125px;
 }
 
 #footer {

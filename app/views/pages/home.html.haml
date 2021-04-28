@@ -1,15 +1,155 @@
-%body
-  %header
-    #banner
-      .cover
-        %h1.welcome Welcome to Wolf's food
-      %nav.navigation
-        %ul.navigation-list
-          %li
-            %a.hyperlink{:href => "#banner"} HOME
-          %li
-            %a.hyperlink{:href => "pages/service"} SERVICE
-          %li
-            %a.hyperlink{:href => "pages/about"} ABOUT
-          %li
-            %a.hyperlink{:href => "pages/info"} CONTACT
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Ordering food
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "style.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap", :rel => "stylesheet"}/
+    %script{:src => "./script.js"}
+  %body
+    %header
+      #banner
+        .cover
+          %h1.welcome Welcome to Wolf's food
+        %nav.navigation
+          %ul.navigation-list
+            %li
+              %a.hyperlink{:href => "#banner"} HOME
+            %li
+              %a.hyperlink{:href => "#selects"} SERVICE
+            %li
+              %a.hyperlink{:href => "#about"} ABOUT
+            %li
+              %a.hyperlink{:href => "#footer"} CONTACT
+      #selects.selects
+        %select.category-select
+          %option{:disabled => "disabled", :hidden => "", :selected => "selected", :value => ""} Category
+          %option{:value => "salad"} Salad
+          %option{:value => "soup"} Soup
+          %option{:value => "drink"} Drink
+        %span.arrow
+        %select.category-select
+          %option{:disabled => "disabled", :hidden => "", :selected => "selected", :value => ""} Sorting
+          %option{:value => "alphabetically"} Alphabetically
+          %option{:value => "ascending"} Ascending
+          %option{:value => "descending"} Descending
+        %span.arrow
+        %select.category-select
+          %option{:disabled => "disabled", :hidden => "", :selected => "selected", :value => ""} Vegetarian
+          %option{:value => "salad"} Salad
+          %option{:value => "soup"} Soup
+          %option{:value => "drink"} Desert
+        %span.arrow
+        %div
+          %section.price
+            %label{:for => "priceSelect"} Price
+            %span.minprice 10$
+            %input#priceSelect{:max => "100", :min => "10", :name => "priceSelect", :type => "range", :value => "55"}/
+            %span.maxprice 100$
+    %main
+      .container
+        .product.image-food
+          %img.image{:src => "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"}/
+          %h2.image-title Pizza quatro formaggi
+          %br/
+          %h4.food-price Price 12$
+          %br/
+          %p.description If you're looking for an ultra cheesy pizza then look no further than this classic!
+        .product.image-food
+          %img.image{:src => "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"}/
+          %h2.image-title Pasta carbonara
+          %br/
+          %h4.food-price Price 10$
+          %br/
+          %p.description This cheesy pasta dish is an Italian favourite.
+          %br/
+        .product.image-food
+          %img.image{:src => "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"}/
+          %h2.image-title Pasta with shrimp
+          %br/
+          %h4.food-price Price 16$
+          %br/
+          %p.description Shrimp and pasta are a match made in heaven!
+          %br/
+        .product.image-food
+          %img.image{:src => "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"}/
+          %h2.image-title Vegan pasta
+          %br/
+          %h4.food-price Price 13$
+          %br/
+          %p.description Best vegan pasta in the town.
+          %br/
+        .product.image-food
+          %img.image{:src => "https://images.unsplash.com/photo-1511994714008-b6d68a8b32a2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"}/
+          %h2.image-title Baked vegetables
+          %br/
+          %h4.food-price Price 10$
+          %br/
+          %p.description The chef's secret recipe.
+          %br/
+        .product.image-food
+          %img.image{:src => "https://images.unsplash.com/photo-1535569807835-01fd773379ad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"}/
+          %h2.image-title Hamburger
+          %br/
+          %h4.food-price Price 8$
+          %br/
+          %p.description Close your eyes, and picture the perfect hamburger. Here it is!
+        .product.image-food
+          %img.image{:src => "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"}/
+          %h2.image-title Vitamin Salad
+          %br/
+          %h4.food-price Price 6$
+          %br/
+          %p.description Just perfect!
+          %br/
+        .product.image-food
+          %img.image{:src => "https://images.unsplash.com/photo-1544025162-d76694265947?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80"}/
+          %h2.image-title Ribs
+          %br/
+          %h4.food-price Price 19$
+          %br/
+          %p.description Baking low and slow is our secret to fall-off-the-bone oven baked ribs.
+      #about
+        %article
+          %h1.aboutus ABOUT US
+          %section
+            %p
+              At Wolf’s food, our mission is simple:
+              enhance and educate the palate with the freshest ingredients and flavors,
+              while surprising and exciting each guest with personal
+              care and service.
+            %h2.ingredients OUR INGREDIENTS
+            %p
+              We are committed to uniting fresh, locally grown produce with farm-raised and wild-caught seafood to make the freshest dishes you’ll find anywhere.
+              Our signature raw bar offers a variety of Rhode Island oysters, crisp cherrystones, littleneck clams, and jumbo shrimp
+              and many of our herbs and vegetables are grown in our vegetable farm on the north end of the pond.
+              %br/
+              %br/
+    %footer#footer
+      %div
+        %h1.info Info
+        %section
+          %p{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Allergens
+          %br/
+          %p{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Privacy policy
+          %br/
+          %p{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Terms and conditions
+      %div
+        %h1.contact Contact
+        %section
+          %p +40 07 24 687 881
+          %br/
+          %p conatct@wolf.info
+          %br/
+          %p Stanescu 22, 400012 Cluj-Napoca
+          %br/
+      %div
+        %h1.program Program
+        %section
+          %p M-F 10-22
+          %br/
+          %p S   10-23
+          %br/
+          %p S   10-23
+          %br/

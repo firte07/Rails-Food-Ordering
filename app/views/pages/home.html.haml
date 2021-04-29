@@ -43,7 +43,7 @@
         %span.arrow
         %div
           %section.price
-            %label{:for => "priceSelect"} Price
+            %label.home{:for => "priceSelect"} Price
             %span.minprice 10$
             %input#priceSelect{:max => "100", :min => "10", :name => "priceSelect", :type => "range", :value => "55"}/
             %span.maxprice 100$
@@ -56,7 +56,7 @@
             %br/
             %h4.food-price #{product.price} $
             %br/
-            %p.description "#{product.description}"
+            %p.description #{product.description}
 
       #about
         %article

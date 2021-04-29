@@ -1,11 +1,16 @@
-body {
+body.index {
   background-color: #fff;
   color: #333;
   margin: 33px; }
 
-body, p, ol, ul, td {
+body.index, ol, ul.data, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 18px; }
+
+p.data {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 17px;
   line-height: 18px; }
 
 pre {
@@ -15,9 +20,6 @@ pre {
 
 a {
   color: #000; }
-
-a:visited {
-  color: #666; }
 
 a:hover {
   color: #fff;

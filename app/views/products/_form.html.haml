@@ -4,7 +4,7 @@
       %h2= "#{pluralize(@product.errors.count, "error")} prohibited this product from being saved:"
       %ul
         - @product.errors.full_messages.each do |message|
-          %li= message
+          %li= message.full_message
 
   .field
     = f.label :title
@@ -15,5 +15,8 @@
   .field
     = f.label :price
     = f.text_field :price
+  .field
+    = f.label :image
+    = f.file_field :image, direct_upload: true
   .actions
     = f.submit 'Save'

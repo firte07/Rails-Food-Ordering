@@ -3,7 +3,7 @@ body.index {
   color: #333;
   margin: 33px; }
 
-body.index, ol, ul.data, td {
+body.index, ul.data, td.index {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 15px;
   line-height: 18px; }
@@ -13,22 +13,14 @@ p.data {
   font-size: 17px;
   line-height: 18px; }
 
-pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px; }
-
-a {
-  color: #000; }
-
 a:hover {
   color: #fff;
   background-color: #000; }
 
-th {
+th.index {
   padding-bottom: 5px; }
 
-td {
+td.index {
   padding: 0 5px 7px; }
 
 div.field,
@@ -63,5 +55,5 @@ div.actions {
   font-size: 12px;
   list-style: square; }
 
-label {
+label.new {
   display: block; }

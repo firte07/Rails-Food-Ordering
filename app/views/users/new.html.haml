@@ -1,5 +1,5 @@
-%title.main Sign up
-%h1.main Sign up
+%title.title-main Sign up
+%h1.h1-main Sign up
 .row
   .col-md-6.col-md-offset-3
     = form_with(model: @user, local: true) do |f|
@@ -12,4 +12,4 @@
       = f.password_field :password, class: 'form-control'
       = f.label :password_confirmation, 'Confirmation'
       = f.password_field :password_confirmation, class: 'form-control'
-      = f.submit 'Create my account', class: 'btn btn-primary'
+      = f.submit 'Create my account', class: 'btn btn-primary btn-create'

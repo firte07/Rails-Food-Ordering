@@ -9,7 +9,7 @@
   display: block;
   aspect-ratio: 16/9; }
 
-.container {
+.container-home {
   display: grid;
   height: 1200px;
   grid-template-columns: repeat(4, 430px);
@@ -68,6 +68,12 @@
 
   label.home {
     padding-right: 20px; }
+}
+
+#priceSelect { display: block }
+
+.label-description {
+  display: block;
 }
 
 .welcome {

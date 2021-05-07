@@ -48,7 +48,7 @@
             %input#priceSelect{:max => "100", :min => "10", :name => "priceSelect", :type => "range", :value => "55"}/
             %span.maxprice 100$
     %main
-      .container
+      .container-home
         - @products.each do |product|
           .product.image-food
             =image_tag product.image, style: "width: 430px; display: block"
@@ -94,7 +94,7 @@
           %br/
       %div
         %h1.program Program
-        %section
+        %section.section-home
           %p M-F 10-22
           %br/
           %p S   10-23

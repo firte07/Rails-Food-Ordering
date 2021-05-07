@@ -6,37 +6,38 @@ $gray-light: #777;
 $gray: #555;
 $gray-darker: #222;
 
-body.main {
+.body-main {
   padding-top: 60px;
 }
 
-section.main {
+.section-main {
   overflow: auto;
 }
 
-textarea.main {
+.textarea-main {
   resize: vertical;
 }
 
 .center {
   text-align: center;
-  h1 {
+  .h1-main {
     margin-bottom: 10px;
   }
 }
 
-h1.main, h2.main, h3.main, h4.main, h5.main, h6.main {
+.h1-main, .h2-main, .h3-main, .h4-main, .h5-main, .h6-main {
   line-height: 1;
 }
 
-h1.main {
+.h1-main {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-h2.main {
+.h2-main {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -45,54 +46,52 @@ h2.main {
   color: $gray-light;
 }
 
-p.main {
+.p-main {
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
-/* footer */
-footer.main {
+.footer-main {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
-  a.main {
+  .a-main {
     color: $gray;
     &:hover {
       color: $gray-darker;
     }
   }
-  small.main {
+  .small-main {
     float: left;
   }
-  ul.main {
+  .ul-main {
     float: right;
     list-style: none;
-    li.main {
+    .li-main {
       float: left;
       margin-left: 15px;
     }
   }
 }
 
-/* sidebar */
-aside {
+.aside-main {
   section.user_info {
     margin-top: 20px;
   }
-  section {
+  .section-main {
     padding: 10px 0;
     margin-top: 20px;
     &:first-child {
       border: 0;
       padding-top: 0;
     }
-    span {
+    .span-main {
       display: block;
       margin-bottom: 3px;
       line-height: 1;
     }
-    h1 {
+    .h1-main {
       font-size: 1.4em;
       text-align: left;
       letter-spacing: -1px;
@@ -117,19 +116,19 @@ aside {
   }
 }
 
-/* forms */
-input, textarea, select, .uneditable-input {
+.btn-create, .form-control, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
 }
-input {
+
+.btn-create {
   height: auto !important;
 }
 
 #error_explanation {
   color: red;
-  ul {
+  .ul-main {
     color: red;
     margin: 0 0 10px 0;
   }

@@ -41,12 +41,12 @@
           %option{:value => "soup"} Soup
           %option{:value => "drink"} Desert
         %span.arrow
-        %div
+        %div.price-home
           %section.price
-            %label.home{:for => "priceSelect"} Price
-            %span.minprice 10$
-            %input#priceSelect{:max => "100", :min => "10", :name => "priceSelect", :type => "range", :value => "55"}/
-            %span.maxprice 100$
+            %label.label-home{:for => "priceSelect"} Price
+            %span.min-price 10$
+            %input.price-select{:max => "100", :min => "10", :name => "priceSelect", :type => "range", :value => "55"}
+            %span.max-price 100$
     %main
       .container-home
         - @products.each do |product|
@@ -75,29 +75,29 @@
               %br/
               %br/
     %footer#footer
-      %div
+      %div.info
         %h1.info Info
         %section
-          %p{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Allergens
+          %p.info{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Allergens
           %br/
-          %p{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Privacy policy
+          %p.info{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Privacy policy
           %br/
-          %p{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Terms and conditions
-      %div
+          %p.info{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Terms and conditions
+      %div.contact
         %h1.contact Contact
         %section
-          %p +40 07 24 687 881
+          %p.info +40 07 24 687 881
           %br/
-          %p conatct@wolf.info
+          %p.info conatct@wolf.info
           %br/
-          %p Stanescu 22, 400012 Cluj-Napoca
+          %p.info Stanescu 22, 400012 Cluj-Napoca
           %br/
-      %div
+      %div.program
         %h1.program Program
         %section.section-home
-          %p M-F 10-22
+          %p.info M-F 10-22
           %br/
-          %p S   10-23
+          %p.info S   10-23
           %br/
-          %p S   10-23
+          %p.info S   10-23
           %br/

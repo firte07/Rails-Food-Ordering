@@ -6,5 +6,7 @@
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
     = render 'main/default'
   %body
+    - flash.each do |message_type, message|
+      %div.div-main{:class => "alert alert-#{message_type}"}= message
     = render 'main/header'
     = yield

@@ -33,7 +33,17 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  color: transparent; }
+  color: transparent;
+  padding-bottom: 0px }
+
+ul.navigation-list {
+  padding-bottom: 0;
+}
+
+input.price-select {
+  justify-content: center;
+  margin-top: 15px;
+}
 
 .hyperlink {
   color: white;
@@ -45,16 +55,9 @@
   text-decoration: none;
   font-size: 35px; }
 
-.selects {
-  display: flex;
-  padding-left: 75px;
-  padding-right: 75px;
-  justify-content: space-around;
-  align-items: flex-start; }
-
 .category-select {
-  font-size: 35px;
   background-color: white;
+  font-size: 35px;
   color: peru;
   font-family: "Dancing Script", serif;
   border: none; }
@@ -70,10 +73,23 @@
     padding-right: 20px; }
 }
 
-#priceSelect { display: block }
+section.price {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 
-.label-description {
-  display: block;
+div.price-home {
+  justify-content: space-around;
+  background: #2E2F30;
+}
+
+div#selects.selects {
+  display: flex;
+  padding-left: 75px;
+  padding-right: 75px;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .welcome {
@@ -155,7 +171,7 @@
   min-width: 750px;
   padding-right: 150px;
 
-  p {
+  p.info {
     font-size: 20px;
     text-align: left; }
 }

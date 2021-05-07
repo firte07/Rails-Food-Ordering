@@ -1,0 +1,29 @@
+%body.index
+  %h1 Listing products
+  %br
+
+  %table
+    %thead
+      %tr.index
+        %th.index Title
+        %th.index Description
+        %th.index Price
+        %th.index Image
+        %th.index
+        %th.index
+        %th.index
+
+    %tbody
+      - @products.each do |product|
+        %tr.index
+          %td.index= product.title
+          %td.index= product.description
+          %td.index= product.price
+          %td.index= image_tag product.image, style: "width: 100px; display: block"
+          %td.index= link_to 'Show', product
+          %td.index= link_to 'Edit', edit_product_path(product)
+          %td.index= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }
+
+  %br
+
+= link_to 'New Product', new_product_path

@@ -34,16 +34,14 @@
   justify-content: space-around;
   align-items: flex-end;
   color: transparent;
-  padding-bottom: 0px }
+  padding-bottom: 0 }
 
 ul.navigation-list {
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
 input.price-select {
   justify-content: center;
-  margin-top: 15px;
-}
+  margin-top: 15px; }
 
 .hyperlink {
   color: white;
@@ -76,21 +74,18 @@ input.price-select {
 section.price {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
 
 div.price-home {
   justify-content: space-around;
-  background: #2E2F30;
-}
+  background: #2E2F30; }
 
 div#selects.selects {
   display: flex;
   padding-left: 75px;
   padding-right: 75px;
   justify-content: space-around;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
 
 .welcome {
   font-family: "Dancing Script", serif;

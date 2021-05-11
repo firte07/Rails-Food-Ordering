@@ -1,13 +1,15 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 #banner {
   background-image: url("https://images.unsplash.com/photo-1579027989536-b7b1f875659b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80.jpeg");
   background-size: cover;
   background-position: center;
   display: block;
-  aspect-ratio: 16/9; }
+  aspect-ratio: 16/9;
+}
 
 .container-home {
   display: grid;
@@ -19,7 +21,8 @@
   justify-content: center;
   align-items: stretch;
   align-content: center;
-  background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"); }
+  background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+}
 
 .cover h1 {
   color: white;
@@ -27,21 +30,25 @@
   font-size: 80px;
   position: relative;
   top: 150px;
-  text-align: center; }
+  text-align: center;
+}
 
 .navigation-list {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
   color: transparent;
-  padding-bottom: 0 }
+  padding-bottom: 0;
+}
 
 ul.navigation-list {
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
 
 input.price-select {
   justify-content: center;
-  margin-top: 15px; }
+  margin-top: 15px;
+}
 
 .hyperlink {
   color: white;
@@ -51,14 +58,16 @@ input.price-select {
   margin-left: 50px;
   margin-right: 50px;
   text-decoration: none;
-  font-size: 35px; }
+  font-size: 35px;
+}
 
 .category-select {
   background-color: white;
   font-size: 35px;
   color: peru;
   font-family: "Dancing Script", serif;
-  border: none; }
+  border: none;
+}
 
 .price {
   font-size: 35px;
@@ -68,24 +77,28 @@ input.price-select {
   border: none;
 
   label.home {
-    padding-right: 20px; }
+    padding-right: 20px;
+  }
 }
 
 section.price {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start; }
+  align-items: flex-start;
+}
 
 div.price-home {
   justify-content: space-around;
-  background: #2E2F30; }
+  background: #2E2F30;
+}
 
 div#selects.selects {
   display: flex;
   padding-left: 75px;
   padding-right: 75px;
   justify-content: space-around;
-  align-items: flex-start; }
+  align-items: flex-start;
+}
 
 .welcome {
   font-family: "Dancing Script", serif;
@@ -93,7 +106,8 @@ div#selects.selects {
   letter-spacing: 0.3px;
   text-align: left;
   color: peru;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 .image-title {
   font-family: "Dancing Script", serif;
@@ -101,25 +115,29 @@ div#selects.selects {
   letter-spacing: 0.3px;
   text-align: center;
   color: peru;
-  padding: 10px 10px 0 10px; }
+  padding: 10px 10px 0 10px;
+}
 
 .food-price {
   font-family: "Dancing Script", serif;
   font-size: 30px;
   letter-spacing: 0.3px;
   text-align: center;
-  color: rgb(31, 22, 13); }
+  color: rgb(31, 22, 13);
+}
 
 .description {
   font-family: "Dancing Script", serif;
   font-size: 20px;
   text-align: center;
-  color: rgb(173, 116, 9); }
+  color: rgb(173, 116, 9);
+}
 
 .image {
   display: grid;
   width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 .image-food {
   z-index: 5;
@@ -134,27 +152,31 @@ div#selects.selects {
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
   width: 430px;
   height: fit-content;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .about-us {
   font-family: "Dancing Script", serif;
   font-size: 40px;
   text-align: left;
   color: peru;
-  padding-left: 125px; }
+  padding-left: 125px;
+}
 
 #about p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: x-large;
   padding-left: 125px;
-  padding-right: 100px; }
+  padding-right: 100px;
+}
 
 .ingredients {
   font-family: "Dancing Script", serif;
   font-size: 40px;
   text-align: left;
   color: peru;
-  padding: 50px 0 10px 125px; }
+  padding: 50px 0 10px 125px;
+}
 
 #footer {
   display: grid;
@@ -168,12 +190,14 @@ div#selects.selects {
 
   p.info {
     font-size: 20px;
-    text-align: left; }
+    text-align: left;
+  }
 }
 
 footer {
   &.info, &.program, &.contact {
-    text-align: left; }
+    text-align: left;
+  }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {

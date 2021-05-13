@@ -1,21 +1,21 @@
 = form_for @product do |f|
   - if @product.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@product.errors.count, "error")} prohibited this product from being saved:"
+      %h2= "#{pluralize(@product.errors.count, 'error')} prohibited this product from being saved:"
       %ul.data
         - @product.errors.full_messages.each do |message|
           %li.data= message
   .field
-    = f.label :title
+    = f.label :title, class: 'label-description'
     = f.text_field :title
   .field
-    = f.label :description
+    = f.label :description, class: 'label-description'
     = f.text_area :description
   .field
-    = f.label :price
+    = f.label :price, class: 'label-description'
     = f.text_field :price
   .field
-    = f.label :image
+    = f.label :image, class: 'label-description'
     = f.file_field :image, direct_upload: true
   .actions
     = f.submit 'Save'

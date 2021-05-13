@@ -5,24 +5,22 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @product = Product.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @product = Product.new(product_params)
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { redirect_to(@product, notice: 'Product was successfully created.')}
       else
-        format.html { render :new }
+        format.html { render(:new) }
       end
     end
   end
@@ -30,9 +28,9 @@ class ProductsController < ApplicationController
   def update
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
+        format.html { redirect_to(@product, notice: 'Product was successfully updated.') }
       else
-        format.html { render :edit }
+        format.html { render(:edit) }
       end
     end
   end
@@ -40,7 +38,7 @@ class ProductsController < ApplicationController
   def destroy
     @product.destroy
     respond_to do |format|
-      format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
+      format.html { redirect_to(products_url, notice: 'Product was successfully destroyed.') }
     end
   end
 

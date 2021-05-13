@@ -1,12 +1,12 @@
 !!!
-%html{:lang => "en"}
+%html{:lang => 'en'}
   %head
-    %meta{:charset => "utf-8"}/
+    %meta{:charset => 'utf-8'}/
     %title Ordering food
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    %link{:href => "style.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap", :rel => "stylesheet"}/
-    %script{:src => "./script.js"}
+    %meta{:content => 'width=device-width, initial-scale=1', :name => 'viewport'}/
+    %link{:href => 'style.css', :rel => 'stylesheet', :type => 'text/css'}/
+    %link{:href => 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap', :rel => 'stylesheet'}/
+    %script{:src => './script.js'}
   %body
     %header
       #banner
@@ -15,49 +15,48 @@
         %nav.navigation
           %ul.navigation-list
             %li
-              %a.hyperlink{:href => "#banner"} HOME
+              %a.hyperlink{:href => '#banner'} HOME
             %li
-              %a.hyperlink{:href => "#selects"} SERVICE
+              %a.hyperlink{:href => '#selects'} SERVICE
             %li
-              %a.hyperlink{:href => "#about"} ABOUT
+              %a.hyperlink{:href => '#about'} ABOUT
             %li
-              %a.hyperlink{:href => "#footer"} CONTACT
+              %a.hyperlink{:href => '#footer'} CONTACT
       #selects.selects
         %select.category-select
-          %option{:disabled => "disabled", :hidden => "", :selected => "selected", :value => ""} Category
-          %option{:value => "salad"} Salad
-          %option{:value => "soup"} Soup
-          %option{:value => "drink"} Drink
+          %option{:disabled => 'disabled', :hidden => '', :selected => 'selected', :value => ''} Category
+          %option{:value => 'salad'} Salad
+          %option{:value => 'soup'} Soup
+          %option{:value => 'drink'} Drink
         %span.arrow
         %select.category-select
-          %option{:disabled => "disabled", :hidden => "", :selected => "selected", :value => ""} Sorting
-          %option{:value => "alphabetically"} Alphabetically
-          %option{:value => "ascending"} Ascending
-          %option{:value => "descending"} Descending
+          %option{:disabled => 'disabled', :hidden => '', :selected => 'selected', :value => ''} Sorting
+          %option{:value => 'alphabetically'} Alphabetically
+          %option{:value => 'ascending'} Ascending
+          %option{:value => 'descending'} Descending
         %span.arrow
         %select.category-select
-          %option{:disabled => "disabled", :hidden => "", :selected => "selected", :value => ""} Vegetarian
-          %option{:value => "salad"} Salad
-          %option{:value => "soup"} Soup
-          %option{:value => "drink"} Desert
+          %option{:disabled => 'disabled', :hidden => '', :selected => 'selected', :value => ''} Vegetarian
+          %option{:value => 'salad'} Salad
+          %option{:value => 'soup'} Soup
+          %option{:value => 'drink'} Desert
         %span.arrow
-        %div
+        %div.price-home
           %section.price
-            %label.home{:for => "priceSelect"} Price
-            %span.minprice 10$
-            %input#priceSelect{:max => "100", :min => "10", :name => "priceSelect", :type => "range", :value => "55"}/
-            %span.maxprice 100$
+            %label.label-home{:for => 'priceSelect'} Price
+            %span.min-price 10$
+            %input.price-select{:max => '100', :min => '10', :name => 'priceSelect', :type => 'range', :value => '55'}
+            %span.max-price 100$
     %main
-      .container
+      .container-home
         - @products.each do |product|
           .product.image-food
-            =image_tag product.image, style: "width: 430px; display: block"
+            =image_tag product.image, style: 'width: 430px; display: block'
             %h2.image-title #{product.title}
             %br/
             %h4.food-price #{product.price} $
             %br/
             %p.description #{product.description}
-
       #about
         %article
           %h1.about-us ABOUT US
@@ -75,29 +74,29 @@
               %br/
               %br/
     %footer#footer
-      %div
+      %div.info
         %h1.info Info
         %section
-          %p{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Allergens
+          %p.info{:onmouseout => 'handleMouseOut(this)', :onmouseover => 'handleMouseOver(this)'} Allergens
           %br/
-          %p{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Privacy policy
+          %p.info{:onmouseout => 'handleMouseOut(this)', :onmouseover => 'handleMouseOver(this)'} Privacy policy
           %br/
-          %p{:onmouseout => "handleMouseOut(this)", :onmouseover => "handleMouseOver(this)"} Terms and conditions
-      %div
+          %p.info{:onmouseout => 'handleMouseOut(this)', :onmouseover => 'handleMouseOver(this)'} Terms and conditions
+      %div.contact
         %h1.contact Contact
         %section
-          %p +40 07 24 687 881
+          %p.info +40 07 24 687 881
           %br/
-          %p conatct@wolf.info
+          %p.info conatct@wolf.info
           %br/
-          %p Stanescu 22, 400012 Cluj-Napoca
+          %p.info Stanescu 22, 400012 Cluj-Napoca
           %br/
-      %div
+      %div.program
         %h1.program Program
-        %section
-          %p M-F 10-22
+        %section.section-home
+          %p.info M-F 10-22
           %br/
-          %p S   10-23
+          %p.info S   10-23
           %br/
-          %p S   10-23
+          %p.info S   10-23
           %br/

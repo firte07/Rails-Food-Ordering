@@ -1,19 +1,19 @@
 ---
 development:
-  cloud_name: dlwyepfe6
-  api_key: '511413483619817'
-  api_secret: opTDXHqi_y7e-PMNSKrWf9i2KPk
+  cloud_name: <%= ENV['CLOUDINARY_CLOUD_NAME'] %>
+  api_key:    <%= ENV['CLOUDINARY_API_KEY'] %>
+  api_secret: <%= ENV['CLOUDINARY_API_SECRET'] %>
   enhance_image_tag: true
   static_file_support: false
 production:
-  cloud_name: dlwyepfe6
-  api_key: '511413483619817'
-  api_secret: opTDXHqi_y7e-PMNSKrWf9i2KPk
+  cloud_name: <%= ENV['CLOUDINARY_CLOUD_NAME'] %>
+  api_key:    <%= ENV['CLOUDINARY_API_KEY'] %>
+  api_secret: <%= ENV['CLOUDINARY_API_SECRET'] %>
   enhance_image_tag: true
   static_file_support: true
 test:
-  cloud_name: dlwyepfe6
-  api_key: '511413483619817'
-  api_secret: opTDXHqi_y7e-PMNSKrWf9i2KPk
+  cloud_name: <%= ENV['CLOUDINARY_CLOUD_NAME'] %>
+  api_key:    <%= ENV['CLOUDINARY_API_KEY'] %>
+  api_secret: <%= ENV['CLOUDINARY_API_SECRET'] %>
   enhance_image_tag: true
   static_file_support: false

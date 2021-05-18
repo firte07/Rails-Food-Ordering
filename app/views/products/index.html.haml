@@ -19,7 +19,7 @@
           %td.index= product.title
           %td.index= product.description
           %td.index= product.price
-          %td.index= image_tag product.image, style: "width: 100px; display: block"
+          %td.index= cl_image_tag(product.image.key, style: "width: 100px; display: block")
           %td.index= link_to 'Show', product
           %td.index= link_to 'Edit', edit_product_path(product)
           %td.index= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }

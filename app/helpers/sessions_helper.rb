@@ -38,7 +38,7 @@ module SessionsHelper
 
   def log_in_user(user_id)
     user = User.find_by(id: user_id)
-    if user&.user.authenticated?(cookies[:remember_token])
+    if user&.authenticated?(cookies[:remember_token])
       log_in(user)
       @current_user = user
     end

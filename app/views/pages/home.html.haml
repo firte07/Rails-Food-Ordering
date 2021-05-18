@@ -51,7 +51,7 @@
       .container-home
         - @products.each do |product|
           .product.image-food
-            =image_tag product.image, style: 'width: 430px; display: block'
+            =cl_image_tag(product.image.key, style: 'width: 430px; display: block')
             %h2.image-title #{product.title}
             %br/
             %h4.food-price #{product.price} $

@@ -8,12 +8,10 @@ class AccountActivationsController < ApplicationController
       log_in(user)
       session[:session_token] = user.session_token
       flash[:success] = 'Account activated!'
-
-      redirect_to(login_url)
     else
       flash[:danger] = 'Invalid activation link'
-
-      redirect_to(login_url)
     end
+
+    redirect_to(login_url)
   end
 end

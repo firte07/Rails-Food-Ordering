@@ -8,9 +8,11 @@ Rails.application.routes.draw do
   get '/signup', to: 'users#new'
   get '/login', to: 'sessions#new'
 
-  resources :products
-  resources :users
-
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
+
+  resources :products
+  resources :users
+  resources :account_activations, only: [:edit]
+  resources :password_resets, only: %i[new create edit update]
 end
